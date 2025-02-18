@@ -24,7 +24,7 @@ app.get("/pessoas/:id", (req, res)=>{
   if(!pessoa){
     return res.status(404).json({messgae: "Pessoa não encontrada"})
   }
-  res.json(pessoas)
+  res.json(pessoa)
 })
 app.listen(PORT, ()=>{
   console.log(`Servidor rodando na porta http://localhost:${PORT}/pessoas`)

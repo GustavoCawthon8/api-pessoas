@@ -1,9 +1,12 @@
 const express = require('express');
+const cors = require("cors");
 
 const m = "Masculino";
 const f = "Feminino";
 const PORT = process.env.PORT || 5000;
 const app = express();
+
+app.use(cors());
 
 const pessoas = [
   {id: 1, nome: "Gustavo", idade: 16, genero: m},
